@@ -20,6 +20,4 @@ console.log(Array.from("Nish"));
 let s1 = 100
 let s2 = 300
 let s3 = 600
-
-
 console.log(Array.of(s1,s2,s3));
