@@ -1,13 +1,13 @@
-const tinderUser = new Object(); // Singleton Object 
-const tinderUser1 = {} // Non-Singleton Object 
+// const tinderUser = new Object(); // Singleton Object 
+// const tinderUser1 = {} // Non-Singleton Object 
 
-tinderUser1.id="123xx";
-tinderUser1.name="Nish";
-tinderUser1.isLoggedIn=false;
+// tinderUser1.id="123xx";
+// tinderUser1.name="Nish";
+// tinderUser1.isLoggedIn=false;
 
-console.log(Object.keys(tinderUser1));
-console.log(Object.values(tinderUser1));
-console.log(Object.entries(tinderUser1));
+// console.log(Object.keys(tinderUser1));
+// console.log(Object.values(tinderUser1));
+// console.log(Object.entries(tinderUser1));
 
 // console.log(tinderUser1);
 
@@ -33,20 +33,29 @@ console.log(Object.entries(tinderUser1));
 // console.log(obj5);
 
 //accessing objects in the array
-const data = [
-    {
-        user: "Nish",
-        pass: "1231"
-    },
-    {
-        user: "Nidfgsh",
-        pass: "1242331"
-    },
-    {
-        user: "Nishdfs",
-        pass: "123sdfs1"
-    }
-]
+// const data = [
+//     {
+//         user: "Nish",
+//         pass: "1231"
+//     },
+//     {
+//         user: "Nidfgsh",
+//         pass: "1242331"
+//     },
+//     {
+//         user: "Nishdfs",
+//         pass: "123sdfs1"
+//     }
+// ]
+// console.log(data[2].user);
 
-console.log(data[2].user);
+//destructuring on an object
 
+const regularUser = {
+    emial:"hsdjb@gmail.com",
+    fullname:"Nishant Singh Yadav"
+}
+
+console.log(regularUser.fullname); // Normal Form
+const{fullname:myName} = regularUser; //Destructuring
+console.log(myName);
