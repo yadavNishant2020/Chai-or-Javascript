@@ -1,9 +1,10 @@
-//singelton
+//singleton
 //object.create  --constructer method
 
-//Symbol Declare 
+//Objest Literals 
 
-const sym = Symbol("key01");
+//Symbol Declare 
+// const sym = Symbol("key01");
 
 //literal method
 const user = {
