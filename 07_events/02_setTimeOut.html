@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayNish = function(){
+    console.log("Nish");
+   }
+   const changeText = function(){
+    document.querySelector("H1").innerHTML = "Nish is Here!!";
+   }
+
+   setTimeout(sayNish,3000);
+   const heading = setTimeout(changeText,4000);
+
+  document.querySelector("#stop").addEventListener("click",function(){
+    clearTimeout(heading);
+  })
+</script>
+</html>
